@@ -45,7 +45,6 @@ const requestListener = (req, res) => {
         res.write(JSON.stringify({
             status: "success",
             data: todos,
-            delete: 'delete todos'
         }));
         res.end();
     } else if (req.url.startsWith("/todos/") && req.method == "DELETE") {
@@ -57,7 +56,6 @@ const requestListener = (req, res) => {
             res.write(JSON.stringify({
                 status: "success",
                 data: todos,
-                delete: id
             }));
             res.end();
         } else {
