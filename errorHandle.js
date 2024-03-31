@@ -1,4 +1,4 @@
-const headers = require('./headers');
+const headers = require('./corsHeader');
 
 function errorHandle(res){
     res.writeHead(400, headers);

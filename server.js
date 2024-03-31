@@ -1,6 +1,6 @@
 const http = require('http');
 const { v4: uuidv4 } = require('uuid');
-const headers = require('./headers');
+const headers = require('./corsHeader');
 const errorHandle = require('./errorHandle');
 const todos = [];
 
